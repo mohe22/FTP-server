@@ -3,7 +3,7 @@ import os
 import threading
 from utils.file_utils import list_files,cwd,create_directory,upload_file,download_file,delete_recursive,delete_folder
 from auth import authenticate
-
+#TODO: parallel upload/download , port forwarding, enable logging
 class ClientSession:
     def __init__(self, client_socket , manager, root_dir="shared"):
         self.client_socket = client_socket
